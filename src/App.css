@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.profilePic {
+  width: 200px;
+  height: 200px;
+  border-radius: 6rem;
+  border: solid white 2px;
+  display: inline-flex;
+  object-fit: contain;
+}
+
+.profilePic2 {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+
+}
+
+
+
+.userBoard {
+  display: grid;
+background-color: #efefef;
+padding: 1rem;
+margin-bottom: 2rem;
+
+
+}
+
+
+.userInfo {
+  width: 250px;
+  display: inline-flex;
+}
+
+.userLink {
+  color: #007bff;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.userLink:hover {
+text-decoration: underline;
+
+}
+
+.imageContainer {
+ display: flex;
+ flex-wrap: wrap;
+ 
+}
+
+.pointerStyle {
+  cursor: pointer;
+}
+
+.UploadForm {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.uploadPage {
+  display: grid;
+  justify-content: center;
+
+}
+
+
+.previewImage {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  max-height: 600px;
+  object-fit: contain; 
+  margin: auto;
+} 
+
+
+.livePreview {
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  margin: auto;
+}
+
+
