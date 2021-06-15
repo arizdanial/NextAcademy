@@ -32,7 +32,7 @@ function Homepage() {
                         <div className="userBoard" key={p.id}>
                             <div className="userInfo" >
                                 <Link to={`/profile/${p.id}`} className="userLink">{p.username}</Link>
-                                <img className="profilePic" src={p.profileImage} />
+                                <img className="profilePic" src={p.profileImage} alt="profile picture" />
                             </div>
                             <UserImages  userID={p.id}/>
                         </div>

@@ -18,7 +18,7 @@ const LoginModal = (props) => {
     const { closeModal, toggle, updateLogIn } = props
     const [username, changeUsername] = useState("");
     const [password, changePassword] = useState("");
-    const [modal, setModal] = useState(true);
+    const modal= true;
 
     const handleSubmit = (e) => {
         e.preventDefault()

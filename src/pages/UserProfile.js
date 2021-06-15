@@ -26,7 +26,7 @@ function UserProfile() {
                 setUser(resp.data)
                 setLoading(false)
             })
-    }, [])
+    }, [userID.id])
 
     if (isLoading) {
         return <LoadingIndicator />
@@ -37,7 +37,7 @@ function UserProfile() {
             <Container fluid>
                 <Container className='m-2'>
                     <Row>
-                        <Col sm={5}><img className='profilePic2' src={user.profileImage} /></Col>
+                        <Col sm={5}><img className='profilePic2' src={user.profileImage} alt="profile pic 2" /></Col>
                         <Col sm={6}> <h3>@{user.username}</h3></Col>
                     </Row>
                 </Container>

@@ -58,7 +58,7 @@ const UploadPage = () => {
 
     useEffect(() => {
         handleNotLoggedIn()
-    }, [])
+    })
 
     const removePic = () => {
         setPreviewImage(null)
@@ -81,7 +81,7 @@ const UploadPage = () => {
                         width="100%"
                         height="100%"
                         
-                        />
+                                alt='preview image'/>
                         ) : (
                             <h3 className="livePreview">
                             {message ? message : "Live Preview"}

@@ -9,8 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const SignUpModal = (props) => {
 
 
-    const [modal, setModal] = useState(true);
-
+    const modal = true
     const { closeModal, toggle, updateLogIn } = props
 
 
@@ -38,7 +37,7 @@ const SignUpModal = (props) => {
 
     useEffect(() => {
         handleLogin()
-    }, [])
+    })
 
 
     const submit = () => {

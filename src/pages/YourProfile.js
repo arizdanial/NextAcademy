@@ -1,12 +1,8 @@
-import { useState, useEffect, useImperativeHandle } from "react"
+import { useState, useEffect } from "react"
 import axios from 'axios';
 import { useHistory } from 'react-router-dom'
 import { Button } from 'reactstrap'
 import LoadingIndicator from '../components/LoadingIndicator'
-import UploadPage from "./UploadPage";
-
-
-
 
 const YourProfile = () => {
 
@@ -42,19 +38,14 @@ const YourProfile = () => {
             })
             .catch(() => {
                 alert(`Error: Please log in`)
-                history.push('/signin')
+                history.push('/')
             })
-    }, [])
+    })
 
-
-    // console.log(currentUser)
 
     if (loading === true) {
         return <LoadingIndicator />
-    } else {
-        // do nothing
-    }
-
+    } 
 
     return (
         <>

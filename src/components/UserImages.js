@@ -15,7 +15,7 @@ function UserImages(props) {
                 setImages(resp.data)
                 setLoading(false)
             })
-    }, [])
+    }, [userID])
 
     if (loading) {
         return <LoadingIndicator />
@@ -34,7 +34,7 @@ function UserImages(props) {
                             height: '250px',
                             objectFit: 'cover',
                             margin: '1rem 1rem 1rem 2rem',
-                        }} src={t} />
+                        }} src={t} alt="userimages" />
                     )
                 })
 

@@ -61,14 +61,14 @@ const Navigation = () => {
 
     useEffect(() => {
         checkSiteLogIn()
-    }, [])
+    })
 
 
     return (
         <div>
             <Navbar color="light" light expand="md" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <div>
-                    <img style={{ width: "32px", margin: "0px 10px 0px 40px", cursor: 'pointer' }} onClick={() => { history.push("/") }} src={Logo} />
+                    <img style={{ width: "32px", margin: "0px 10px 0px 40px", cursor: 'pointer' }} onClick={() => { history.push("/") }} src={Logo} alt="Logo"/>
                     <NavbarBrand className="pointerStyle" onClick={() => { history.push("/") }}>Nextagram</NavbarBrand>
                 </div>
                 <div style={{ marginRight: '40px', color: 'blue' }}>

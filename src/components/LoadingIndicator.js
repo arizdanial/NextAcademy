@@ -15,7 +15,7 @@ function LoadingIndicator() {
                     justifyContent: "center",
                     alignItems: "center",
 
-                }} src={loading} />
+                }} src={loading} alt="loading" />
             </div>
         </>
     )
