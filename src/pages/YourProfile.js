@@ -54,7 +54,7 @@ const YourProfile = () => {
                 <img style={{
                     width: '350px',
                     height: '350px',
-                }} src={currentUser.profile_picture} />
+                }} src={currentUser.profile_picture} alt='userprofile'/>
                 <h2>{currentUser.username}</h2>
                 <h2>ID number: {currentUser.id}</h2>
                 <h2>{currentUser.email}</h2>

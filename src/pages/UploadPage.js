@@ -81,7 +81,7 @@ const UploadPage = () => {
                         width="100%"
                         height="100%"
                         
-                                alt='preview image'/>
+                                alt='preview'/>
                         ) : (
                             <h3 className="livePreview">
                             {message ? message : "Live Preview"}

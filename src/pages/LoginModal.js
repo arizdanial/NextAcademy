@@ -36,7 +36,7 @@ const LoginModal = (props) => {
 
     useEffect(() => {
         handleLogin()
-    }, [])
+    })
 
     const login = () => {
         axios.post('https://insta.nextacademy.com/api/v1/login', { username, password })
