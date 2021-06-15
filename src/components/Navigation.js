@@ -52,10 +52,16 @@ const Navigation = () => {
         changeLoggedIn(false)
     }
 
-    useEffect(()=> {
-        localStorage.getItem('token') ? 
-        changeLoggedIn(true)
-        : null
+    const checkSiteLogIn = () => {
+        if (localStorage.getItem('token')) {
+            return changeLoggedIn(true)
+        } else {
+        }
+    }
+
+
+    useEffect(() => {
+        checkSiteLogIn()
     }, [])
 
 
@@ -76,7 +82,7 @@ const Navigation = () => {
                             {
                                 isOpen ?
                                     isLoginModal ?
-                                        <LoginModal closeModal={closeModal} toggle={toggle} updateLogIn={updateLogIn}/>
+                                        <LoginModal closeModal={closeModal} toggle={toggle} updateLogIn={updateLogIn} />
                                         :
                                         <SignUpModal closeModal={closeModal} toggle={toggle} updateLogIn={updateLogIn} />
                                     :

@@ -25,9 +25,10 @@ function UserImages(props) {
     return (
         <div className='imageContainer'>
             {
-                images.map((t) => {
+                images.map((t , index) => {
+                    // console.log(t)
                     return (
-                        <img style={{
+                        <img key={index} style={{
                             width: '30%',
                             maxWidth: '100%',
                             height: '250px',
