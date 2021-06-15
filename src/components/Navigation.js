@@ -55,10 +55,9 @@ const Navigation = () => {
     const checkSiteLogIn = () => {
         if (localStorage.getItem('token')) {
             return changeLoggedIn(true)
-        } else {
         }
     }
-
+    // console.log(localStorage.getItem('token'))
 
     useEffect(() => {
         checkSiteLogIn()
@@ -117,5 +116,4 @@ const Navigation = () => {
     );
 }
 
-export default Navigation;
-
+export default Navigation;  
